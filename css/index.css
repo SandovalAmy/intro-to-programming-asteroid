@@ -174,9 +174,16 @@ button:hover {
   font-size: 1.5rem;
 }
 
-#projects li {
-  display: block;
-  margin-bottom: 1%;
+#skills li {
+  display: none;
+}
+
+/* .project-container {
+  border: red solid 2px;
+} */
+
+.project-image {
+  width: 100%;
 }
 
 .experience-list {
@@ -324,5 +331,8 @@ footer {
   .btn-group {
     flex-direction: row;
     justify-content: center;
+  }
+  #skills li {
+    display: inline-block;
   }
 }
