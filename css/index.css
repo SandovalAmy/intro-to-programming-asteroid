@@ -243,6 +243,10 @@ button:hover {
   display: none;
 }
 
+.project-container {
+  margin-top: 1em;
+}
+
 .project-image {
   width: 100%;
 }
