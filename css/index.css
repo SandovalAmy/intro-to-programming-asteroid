@@ -252,6 +252,7 @@ button:hover {
   color: black;
   border: solid var(--color3) 4px;
   border-radius: 20px;
+  margin-bottom: 12px;
 }
 
 #skills h2 {
@@ -270,6 +271,14 @@ button:hover {
   display: none;
 }
 
+#projects {
+  background-color: white;
+  color: var(--color2);
+  border: solid var(--color1) 8px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
 .project-container {
   margin-top: 1em;
 }
@@ -278,13 +287,23 @@ button:hover {
   width: 100%;
 }
 
-.experience-list {
+#education {
+  background-color: var(--color2);
+  border: solid var(--color4) 4px;
+  border-radius: 20px;
+}
+
+#education h2 {
+  color: black;
+}
+
+.education-list {
   display: grid;
   grid-template-columns: 3fr 1fr;
   row-gap: 1em;
 }
 
-.experience-list li {
+.education-list li {
   background: none;
 }
 .bold {
