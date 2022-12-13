@@ -3,6 +3,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  --color1: #6867ac;
+  --color2: #a267ac;
+  --color3: #ce7bb0;
+  --color4: #ffbcd1;
 }
 
 html {
@@ -12,8 +16,8 @@ html {
 
 /* applies to the entire body of the HTML document (except where overriden by more specific selectors) */
 body {
-  background-color: rgb(255, 255, 255);
-  color: rgb(36, 70, 142);
+  background-color: black;
+  color: var(--color4);
   font-family: "Roboto", sans-serif;
   font-size: 100%; /* 100% = 16px on most screens */
   padding-top: 90px;
@@ -24,10 +28,10 @@ header {
   top: 0; /* position navbar at top of page */
   z-index: 99; /* position navbar in front of all other elements */
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: black;
   padding: 2%;
   border-bottom-style: solid;
-  border-bottom-color: rgb(219, 9, 126);
+  border-bottom-color: var(--color4);
   text-align: center;
 }
 
@@ -82,7 +86,7 @@ nav a {
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
   display: block;
-  background: rgb(36, 70, 142);
+  background: var(--color1);
   height: 2px;
   width: 2em;
   border-radius: 2px;
@@ -122,7 +126,7 @@ nav a {
   display: block; /* Change from inline-block to block */
   margin-inline: auto;
   width: max-content;
-  background-color: rgb(255, 255, 255);
+  background-color: black;
 }
 
 h1 {
@@ -143,13 +147,13 @@ h1::after {
 }
 
 h1::before {
-  background-color: rgb(255, 255, 255);
+  background-color: black;
   animation: typewriter 4s steps(22) 1s forwards;
 }
 
 h1::after {
   width: 0.125em;
-  background: black;
+  background: var(--color4);
   animation: typewriter 4s steps(22) 1s forwards, blink 750ms steps(22) infinite;
 }
 
@@ -181,7 +185,7 @@ h1::after {
 #profile-photo {
   display: block;
   padding: 1em;
-  border-radius: 50%;
+  border-radius: 25%;
   width: 20em;
 }
 
@@ -194,18 +198,15 @@ h2 {
   margin-bottom: 1.5rem;
   font-size: 2em;
   font-weight: bolder;
-  color: rgb(36, 70, 142);
+  color: var(--color3);
 }
 
 ul {
   list-style-type: none;
 }
 
-a:link {
-  color: rgb(0, 81, 255);
-}
-a:visited {
-  color: rgb(102, 0, 255);
+a {
+  color: var(--color1);
 }
 a:link,
 a:visited {
@@ -213,7 +214,7 @@ a:visited {
 }
 a:hover,
 a:active {
-  color: rgb(219, 9, 126);
+  color: var(--color4);
 }
 
 button {
@@ -221,14 +222,25 @@ button {
   border-style: double;
   border-radius: 5%;
   padding: 1.5%;
-  background-color: rgba(219, 9, 126, 0.05);
-  color: rgb(36, 70, 142);
+  background-color: white;
+  color: var(--color1);
   font-size: 1em;
   font-weight: bold;
 }
 
 button:hover {
-  color: rgb(219, 9, 126);
+  color: var(--color4);
+}
+
+#about {
+  background-color: var(--color1);
+  color: white;
+  border: solid white 2px;
+  border-radius: 20px;
+}
+
+#about h2 {
+  color: white;
 }
 
 #skills ul {
@@ -258,7 +270,7 @@ button:hover {
 }
 
 .experience-list li {
-  background: rgba(191, 208, 247, 0.4);
+  background: none;
 }
 .bold {
   font-size: 1.5rem;
@@ -280,7 +292,7 @@ button:hover {
 }
 .form-label {
   margin: 0;
-  color: rgb(140, 87, 156);
+  color: var(--color4);
   font-size: 1.25em;
   text-align: left;
   display: none;
@@ -299,7 +311,7 @@ button:hover {
 }
 .form-input:focus::placeholder,
 .form-message-area:focus::placeholder {
-  color: rgb(36, 70, 142);
+  color: var(--color1);
 }
 .form-message-area {
   min-height: 5em;
@@ -310,7 +322,7 @@ button:hover {
 }
 
 #messages {
-  color: rgb(140, 87, 156);
+  color: var(--color3);
 }
 #messages li {
   display: block;
@@ -320,17 +332,16 @@ button:hover {
 #messages button[type="button"] {
   padding: 0% 0.5%;
   border-style: dotted;
-  border-color: rgb(219, 9, 126);
+  border-color: var(--color3);
   font-size: 1rem;
-  color: rgb(219, 9, 126);
+  color: var(--color3);
 }
 
 footer {
   margin: 0;
   border-top-style: solid;
-  border-top-color: rgb(219, 9, 126);
+  border-top-color: var(--color3);
   padding: 5%;
-  background-color: rgba(219, 9, 126, 0.05);
   text-align: center;
   font-size: 0.75em;
 }
@@ -368,7 +379,7 @@ footer {
     content: "";
     display: block;
     height: 5px;
-    background: rgb(36, 70, 142);
+    background: var(--color1);
     position: absolute;
     top: -0.75em;
     left: 0;
@@ -389,6 +400,13 @@ footer {
   }
   li {
     display: inline-block;
+  }
+  #heading {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  #profile-photo {
+    width: 30em;
   }
   .form-label {
     display: block;
