@@ -17,7 +17,7 @@
   <body>
     <main>
       <header>
-          <h2 class="logo">Amy Jen Sandoval</h2>
+          <h2 class="logo"><a href="/">Amy Jen Sandoval</a></h2>
           <input type="checkbox" id="nav-toggle" class="nav-toggle">
           <label for="nav-toggle" class="nav-toggle-label">
             <span></span>
@@ -27,14 +27,14 @@
               <li class="nav-links"><a href="#about">About</a></li>
               <li class="nav-links"><a href="#skills">Skills</a></li>
               <li class="nav-links"><a href="#projects">Projects</a></li>
-              <li class="nav-links"><a href="#experience">Education</a></li>
+              <li class="nav-links"><a href="#education">Education</a></li>
               <li class="nav-links"><a href="#messageForm">Contact</a></li>
             </ul>
           </nav>
       </header>
       <div class="section-container">
         <section id="heading">
-              <img src="profile-photo.jpg" alt="profile-photo" id="profile-photo">
+              <img src="profile-photo-pink.jpg" alt="profile-photo" id="profile-photo">
               <h1>Hello, my name is Amy.</h1>
               <p class="subtitle">Welcome to my website!</p>
         </section>
@@ -66,15 +66,33 @@
           <h2>Projects</h2>
           <ul>
             <li class="project-container">
-              I built this Todo app with React.js. Click on the image below to be redirected to my Todo List app.
-              <br><br>
+              <h3>React.js - Final Project for Code the Dream School</h3>
+              <p>
+              I built this Todo app with React.js and styled it with CSS modules.
+              <br>
+              I used Airtable API to GET, POST, and DELETE todo records.
+              <br>
+              <br>
+              Click on the image to be redirected to my Todo List app.
+            </p>
               <a href="https://sandovalamy.github.io/ctd-react-albatross/#/todolist">
               <img src="./todolist.png" alt="todolist" class="project-image">
               </a>
             </li>
             <li class="project-container">
-              I built this Weather app with React.js. Click on the image below to be redirected to my Weather app.
-              <br><br>
+              <h3>React.js - Weather App with Cities Autocomplete</h3>
+              <p>
+                I built this Weather app with React.js and styled it with CSS. 
+                <br>
+                I used the following API: 
+                <br>
+                GeoDB Cities API to search for cities with a minimum population of 100,000 people
+                <br>
+                OpenWeather API to search for the current weather and forecast by geographic coordinates
+                <br>
+                <br>
+                Click on the image to be redirected to my Weather app.
+              </p>
               <a href="https://sandovalamy.github.io/react-weather-app/">
               <img src="./weather.png" alt="weather-app" class="project-image">
               </a>
@@ -82,9 +100,9 @@
           </ul>
         </section>
 
-        <section id="experience">
-          <h2>Education</h2> <!--renamed experience section-->
-          <ul class="experience-list">
+        <section id="education">
+          <h2>Education</h2> 
+          <ul class="education-list">
 
             <li class="bold">Code the Dream: React.js</li>
             <li class="right-align">June 2022 - October 2022</li>
