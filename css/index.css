@@ -279,12 +279,30 @@ button:hover {
   margin-bottom: 12px;
 }
 
+#projects h2 {
+  color: var(--color1);
+  font-size: 2em;
+}
+
+#projects h3 {
+  color: var(--color1);
+  font-size: 1.5em;
+}
+
+#projects p {
+  padding: 8px 0;
+}
+
 .project-container {
-  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
 }
 
 .project-image {
+  padding: 4px;
   width: 100%;
+  border-radius: 20px;
 }
 
 #education {
