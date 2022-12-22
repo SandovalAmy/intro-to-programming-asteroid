@@ -192,6 +192,43 @@ button:hover {
   border-radius: 3em;
   width: 100%;
 }
+
+#background {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color2);
+  color: var(--color4);
+}
+
+.background-div-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.background-header {
+  margin: 1em;
+}
+
+.background-text-box {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5em;
+  padding: 2em;
+  border: none;
+  border-radius: 2em;
+  background-color: var(--color3);
+}
+
+.background-text-header {
+  padding: 0.5em;
+  color: var(--color1);
+}
+
+.background-text-details {
+  padding: 0 0.5em;
+  color: var(--color4);
+}
 /* 
 #skills {
   background-color: var(--color4);
@@ -413,6 +450,25 @@ footer {
     height: 100%;
     max-width: 32em;
   }
+
+  .background-div-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+  }
+
+  .background-header {
+    margin: 2em;
+  }
+
+  .background-text-box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 2em;
+  }
+
   .form-label {
     display: block;
   }
