@@ -279,6 +279,44 @@ button:hover {
   color: transparent;
 }
 
+#about {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color1);
+  color: var(--color3);
+}
+
+.about-div-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-header {
+  margin: 1em;
+}
+
+.about-text-box {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5em;
+  padding: 2em;
+  border: none;
+  border-radius: 2em;
+  background-color: var(--color3);
+}
+
+.about-text-header {
+  padding: 0.5em;
+  color: var(--color1);
+}
+
+.about-text-details {
+  padding: 0 0.5em;
+  font-weight: lighter;
+  color: var(--color4);
+}
+
 /* .message-form {
   margin: auto;
   padding: 0%;
@@ -506,6 +544,25 @@ footer {
   #projects h2 {
     margin: 1em 0;
     color: var(--color4);
+  }
+
+  .about-div-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+  }
+
+  .about-header {
+    margin: 2em;
+  }
+
+  .about-text-box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 50%;
+    margin: 2em;
   }
 
   .form-label {
