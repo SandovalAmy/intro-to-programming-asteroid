@@ -18,7 +18,6 @@ html {
 body {
   font-family: "Raleway", sans-serif;
   font-size: 100%; /* 100% = 16px on most screens */
-  padding-top: 90px;
 }
 
 h1 {
@@ -36,10 +35,7 @@ header {
   z-index: 99; /* position navbar in front of all other elements */
   width: 100%;
   background-color: var(--color3);
-  padding: 2%;
-  /* border-bottom-style: solid;
-  border-bottom-color: var(--color4);
-  border-bottom-width: 4px; */
+  padding: 6% 2%;
   text-align: center;
 }
 
@@ -57,6 +53,7 @@ nav {
   transform: scale(1, 0);
   transform-origin: top;
   transition: transform 400ms ease-in-out;
+  background-color: var(--color3);
 }
 
 .nav-list {
@@ -161,7 +158,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 0;
+  padding: 2% 0;
   background-color: var(--color1);
   color: var(--color3);
 }
@@ -349,7 +346,24 @@ button:hover {
   color: transparent;
 }
 
-/* .message-form {
+#contact {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color1);
+  color: var(--color3);
+}
+
+.contact-div-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-header {
+  margin: 1em;
+}
+
+.message-form {
   margin: auto;
   padding: 0%;
 }
@@ -406,25 +420,29 @@ button:hover {
   color: var(--color3);
 }
 
-footer {
-  margin: 0;
-  border-top-style: solid;
-  border-top-color: var(--color3);
-  padding: 5%;
-  text-align: center;
-  font-size: 0.75em;
-}
-
 .social-media-icons {
   font-size: 2rem;
-} */
+}
+
+#contact a {
+    color: var(--color3);
+  }
+
+#contact a:hover, a:active {
+    color: var(--color4);
+  }
+
 
 /* Media Queries */
 @media screen and (min-width: 800px) {
+  body{
+    padding-top: 75px;
+  }
   .nav-toggle-label {
     display: none;
   }
   header {
+    padding: 2%;
     display: grid;
     grid-template-columns: 1fr auto minmax(200px, 3fr);
   }
@@ -635,14 +653,22 @@ footer {
     text-align: center;
   }
 
+  .contact-div-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+  }
+
+  .contact-header {
+    margin: 2em;
+  }
+
   .form-label {
     display: block;
   }
   .btn-group {
     flex-direction: row;
     justify-content: center;
-  }
-  #skills li {
-    display: inline-block;
   }
 }
