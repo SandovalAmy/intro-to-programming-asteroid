@@ -140,18 +140,18 @@ a:active {
 button {
   margin: 1% 1% 1% 0%;
   border-style: solid;
-  border-color: var(--color4);
+  border-color: var(--color3);
   border-radius: 16px;
   padding: 1.5%;
-  background-color: black;
-  color: var(--color1);
+  background-color: var(--color1);
+  color: var(--color3);
   font-size: 1em;
   font-weight: bold;
 }
 
 button:hover {
   background-color: var(--color4);
-  color: black;
+  cursor: pointer;
 }
 
 #heading {
@@ -368,10 +368,6 @@ button:hover {
  color: transparent;
 }
 
-#messageForm button:hover {
-color: var(--color3);
-}
-
 .message-form {
   margin: auto;
   padding: 0%;
@@ -400,6 +396,8 @@ color: var(--color3);
 .form-message-area {
   font-family: inherit;
   font-size: inherit;
+  border-radius: 10px;
+  padding: 4px;
 }
 .form-input:focus::placeholder,
 .form-message-area:focus::placeholder {
