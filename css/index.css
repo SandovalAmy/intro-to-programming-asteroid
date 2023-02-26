@@ -348,19 +348,28 @@ button:hover {
 
 #contact {
   margin: 0;
-  padding: 0;
+  padding: 2em;
   background-color: var(--color1);
   color: var(--color3);
+}
+
+.contact-grid-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-div-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  text-align: center;
 }
 
 .contact-header {
-  margin: 1em;
+ color: transparent;
+}
+
+#messageForm button:hover {
+color: var(--color3);
 }
 
 .message-form {
@@ -404,20 +413,12 @@ button:hover {
   display: none;
 }
 
-#messages {
-  color: var(--color3);
+.contact-text-box{
+  margin-top: 2em;
 }
-#messages li {
-  display: block;
-  text-align: left;
-  font-size: 1.25em;
-}
-#messages button[type="button"] {
-  padding: 0% 0.5%;
-  border-style: dotted;
-  border-color: var(--color3);
-  font-size: 1rem;
-  color: var(--color3);
+
+.my-socials {
+  padding-top: 2em;
 }
 
 .social-media-icons {
@@ -653,15 +654,22 @@ button:hover {
     text-align: center;
   }
 
-  .contact-div-wrapper {
-    display: flex;
-    flex-direction: row;
+  .contact-grid-container {
+    display: grid;
+    gap: 3em;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    height: 100%;
+    align-content: space-around;
     justify-content: space-between;
-    padding: 1em;
   }
 
-  .contact-header {
-    margin: 2em;
+  .contact-div-wrapper{
+    text-align: left;
+  }
+
+  .contact-header{
+    color: var(--color3);
   }
 
   .form-label {
