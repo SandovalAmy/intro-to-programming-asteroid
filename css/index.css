@@ -173,6 +173,7 @@ button:hover {
 
 .heading-text-box {
   margin: 1em;
+  padding-top: 3em;
   text-align: center;
   align-content: space-between;
 }
@@ -246,8 +247,9 @@ button:hover {
 #projects img {
   margin: 0.5em 0;
   object-fit: cover;
-  max-width: 100%;
-  max-height: 100%;
+  object-position: top;
+  width: 100%;
+  height: 300px;
   border-radius: 1em;
 }
 
@@ -338,7 +340,9 @@ button:hover {
 #things-i-love img {
   margin: 0.5em 0;
   object-fit: cover;
-  max-width: 100%;
+  object-position: top;
+  width: 100%;
+  height: 300px;
   border-radius: 1em;
 }
 
@@ -433,7 +437,62 @@ button:hover {
 
 
 /* Media Queries */
-@media screen and (min-width: 800px) {
+/* iPad mini size */
+@media screen and (min-width: 768px) {
+.logo{
+  font-size: 40px;
+}
+.nav-links{
+  font-size:24px;
+}
+
+.heading-div-wrapper {
+  margin: 2em;
+  padding-top:9em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.heading-text-box {
+  margin: 2em;
+  align-self: center;
+}
+
+.heading-photo-container {
+  margin: 2em;
+}
+.heading-photo {
+  border-radius: 3em;
+  width: 100%;
+  height: 100%;
+}
+
+.things-i-love-grid-container {
+  display: grid;
+  gap: 3em;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  height: 100%;
+}
+
+.things-i-love-header {
+  margin:1em;
+  grid-column: 1/4;
+  border:solid red 5px;
+}
+.things-i-love-text {
+  margin: 1em 0 5em 0;
+  grid-column: 1/4;
+  color: var(--color4);
+  text-align: center;
+  border:solid red 5px;
+}
+
+}
+
+/* iPad air size */
+@media screen and (min-width: 820px) {
   body{
     padding-top: 75px;
   }
@@ -495,29 +554,6 @@ button:hover {
 
   h2 {
     font-size: 24px;
-  }
-
-  .heading-div-wrapper {
-    margin: 2em;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .heading-text-box {
-    margin: 2em;
-    align-self: center;
-  }
-
-  .heading-photo-container {
-    margin: 2em;
-  }
-
-  .heading-photo {
-    border-radius: 3em;
-    width: 100%;
-    height: 100%;
-    max-width: 32em;
   }
 
   .background-div-wrapper {
