@@ -189,6 +189,7 @@ button:hover {
 .heading-photo {
   border-radius: 3em;
   width: 100%;
+  max-width: 420px;
 }
 
 #background {
@@ -479,20 +480,18 @@ button:hover {
 .things-i-love-header {
   margin:1em;
   grid-column: 1/4;
-  border:solid red 5px;
 }
 .things-i-love-text {
   margin: 1em 0 5em 0;
   grid-column: 1/4;
   color: var(--color4);
   text-align: center;
-  border:solid red 5px;
 }
 
 }
 
-/* iPad air size */
-@media screen and (min-width: 820px) {
+/* desktop size */
+@media screen and (min-width: 1008px) {
   body{
     padding-top: 75px;
   }
